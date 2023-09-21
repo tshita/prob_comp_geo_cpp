@@ -1,27 +1,32 @@
 [🏠 Home](../../README.md)
 
 # 射影（Projection）: [AOJ CGL_1_A](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_A)
-ユークリッド平面上で 3 点 $p_1, p_2, p$ が与えられる。 $p_1$ と $p_2$ を通る直線に対する $p$ の射影を求めよ。
+ユークリッド平面上で 3 点 $p_0, p_1, p$ が与えられる。 $p_1$ と $p_2$ を通る直線に対する $p$ の射影を求めよ。
 
 # 解法
-直線 $l$ に対する点 $p$ の射影とは、$p$ から $l$ への垂線を引いた交点のことである。
+直線 $l$ に対する点 $p$ の射影とは、 $p$ から $l$ への垂線を引いた交点のことである。
 
 `projection` 関数に直線 $l$ と点 $p$ を与えると射影が返される。  
 
 $l$ を通る 2 点を $p_0, p_1$ 、求める射影を $q$ とする。このとき、直角三角形 $\triangle p_0 p q$ を考えて射影を導出する。
 2 つのベクトル $\overrightarrow{p_0 p_1}, \overrightarrow{p_0 p}$ のなす角度を $\theta$ とすると、  
 
-$ | \overrightarrow{p_0 q} | = | \overrightarrow{p_0 p} | \, \cos{\theta} = | \overrightarrow{p_0 p} | \frac{\overrightarrow{p_0 p_1} \cdot \overrightarrow{p_0 p}}{|\overrightarrow{p_0 p_1}| |\overrightarrow{p_0 p}|}  = \frac{\overrightarrow{p_0 p_1} \cdot \overrightarrow{p_0 p}}{|\overrightarrow{p_0 p_1}|}$
+```math
+| \overrightarrow{p_0 q} | = | \overrightarrow{p_0 p} | \, \cos{\theta} = | \overrightarrow{p_0 p} | \frac{\overrightarrow{p_0 p_1} \cdot \overrightarrow{p_0 p}}{|\overrightarrow{p_0 p_1}| |\overrightarrow{p_0 p}|}  = \frac{\overrightarrow{p_0 p_1} \cdot \overrightarrow{p_0 p}}{|\overrightarrow{p_0 p_1}|}
+```
 
-となる。ここで、 $\overrightarrow{p_0 p_1} \cdot \overrightarrow{p_0 p}$ はベクトル $\overrightarrow{p_0 p_1}$ と $\overrightarrow{p_0 p}$ の内積（`dot` 関数）で、$|\overrightarrow{p_0 q}|$ はベクトル $|\overrightarrow{p_0 q}|$ のノルム（`Point2::abs` 関数）を表している。  
-以上で求める射影は、
+となる。ここで、 $\overrightarrow{p_0 p_1} \cdot \overrightarrow{p_0 p}$ はベクトル $\overrightarrow{p_0 p_1}$ と $\overrightarrow{p_0 p}$ の内積（`dot` 関数）で、 $|\overrightarrow{p_0 q}|$ はベクトル $|\overrightarrow{p_0 q}|$ のノルム（`Point2::abs` 関数）を表している。  以上で求める射影は、
 
-$q = p_0 + |\overrightarrow{p_0 q}| \frac{\overrightarrow{p_0 p_1}}{|\overrightarrow{p_0 p_1}|} = p_0 + \frac{|\overrightarrow{p_0 p_1}| \, \overrightarrow{p_0 p_1} \cdot \overrightarrow{p_0 p}}{|\overrightarrow{p_0 p_1}|^2}$
+```math
+q = p_0 + |\overrightarrow{p_0 q}| \frac{\overrightarrow{p_0 p_1}}{|\overrightarrow{p_0 p_1}|} = p_0 + \frac{|\overrightarrow{p_0 p_1}| \, \overrightarrow{p_0 p_1} \cdot \overrightarrow{p_0 p}}{|\overrightarrow{p_0 p_1}|^2}
+```
 
 となる。あとはこの式の通りに実装すればよい。
 
 
-
+# 参考文献
+- [高校数学の美しい物語「正射影ベクトルの公式の証明と使い方」](https://manabitimes.jp/math/933) （最終アクセス 2023年9月21日）  
+  実装後に見つけたが導出が同じでより分かりやすい説明のためおススメ。
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
