@@ -4,6 +4,8 @@ Collection of problems in computational geometry solved in C++
 # [AtCoder](https://atcoder.jp/)
 
 # [Aizu Online Judge (AOJ)](https://onlinejudge.u-aizu.ac.jp/home)
+- [CGL-7_B: 内接円](doc/aoj/CGL_7_B.md)  
+   三角形の内接円を求める。
 - [CGL_1_A: 射影](doc/aoj/CGL_1_A.md)  
    ユークリッド平面上の直線に対する点の射影を求める。
 - [CGL_1_C: 反時計回り](doc/aoj/CGL_1_C.md)  
