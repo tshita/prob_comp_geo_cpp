@@ -1,25 +1,29 @@
 [🏠 Home](../../README.md)
 
 # 内接円（Incircle of a Triangle）: [AOJ CGL_7_B](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/all/CGL_7_B)
-三角形 $\triangle ABC$ 内接円を求めよ。
+$\triangle ABC$ の内接円を求めよ。
 
 三角形の内接円（ *incircle* ）とは、三角形の内部にあり三角形の 3 辺に接する円のことである。内接円の中心を内心（ *incenter* ）と呼ぶ。
 
 # 解法
 三角形の内接円は存在して、その半径 $r$ はヘロンの公式から導出され、
 
-$ r = \frac{2S}{a + b + c}$
+```math
+r = \frac{2S}{a + b + c}
+```
 
-である。ただし、 $S$ は $\triangle ABC$ の面積で、$a, b, c$ はそれぞれ $\angle A, \angle B, \angle C$ の対辺の長さとする。すなわち、 $a + b + c$ は $\triangle ABC$ の周長に等しい。
+である。ただし、 $S$ は $\triangle ABC$ の面積で、 $a, b, c$ はそれぞれ $\angle A, \angle B, \angle C$ の対辺の長さとする。すなわち、 $a + b + c$ は $\triangle ABC$ の周長に等しい。
 
 内心は 3 頂点の重み付き平均
 
-$\frac{a}{a + b + c} (x_a, y_a) + \frac{b}{a + b + c} (x_b, y_b) + \frac{c}{a + b + c} (x_c, y_c)$
+```math
+\frac{a}{a + b + c} (x_a, y_a) + \frac{b}{a + b + c} (x_b, y_b) + \frac{c}{a + b + c} (x_c, y_c)
+```
 
 に等しい。ここで、 $(x_a, y_a), (x_b, y_b), (x_c, y_c)$ はそれぞれ $\angle A, \angle B, \angle C$ の座標とする。
 
 内接円は `incircle_triangle` 関数で求める。  
-第二引数の `bool strict_definition` は十分条件をチェックしている。すなわち、上の式で求めた円が三角形の 3 辺に接するのかを確かめている。  
+第二引数の `bool strict_definition` は十分条件をチェックしている。すなわち、上の式で求めた円が三角形の 3 辺に接するのかを確かめている。
 実験的に十分条件を満たさないインスタンスが存在するかは確認できていないが、数値誤差の影響を受けずに正しい内接円を返すかは確信できなかったので追加した。
 
 
