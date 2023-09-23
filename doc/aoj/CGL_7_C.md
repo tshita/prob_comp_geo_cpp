@@ -8,16 +8,20 @@ $\triangle A B C$ の外接円を求めよ。
 # 解法
 三角形の外接円は存在して、外接半径 $R$ は、
 
-$R = \frac{a b c}{4 S}$
+```math
+R = \frac{a b c}{4 S}
+```
 
 である（c.f. [Wikipedia: Circumcircle. Other properties](https://en.wikipedia.org/wiki/Circumcircle#Other_properties) ）。  
 ただし、 $a, b, c$ はそれぞれ $\angle A, \angle B, \angle C$ の対辺の長さ、 $S$ は $\triangle A B C$ の面積とする。
 
 また外心は、
 
-$\frac{a^2 (b^2 + c^2 - a^2) A + b^2 (c^2 + a^2 - b^2) B + c^2 (a^2 + b^2 - c^2) C}{16 S^2}$
+```math
+\frac{a^2 (b^2 + c^2 - a^2) A + b^2 (c^2 + a^2 - b^2) B + c^2 (a^2 + b^2 - c^2) C}{16 S^2}
+```
 
-である。ただし、$A, B, C$ はそれぞれ $\angle A, \angle B, \angle C$ の位置ベクトルとする（c.f. [Wikipedia:「外接円：外心の位置」](https://ja.wikipedia.org/wiki/%E5%A4%96%E6%8E%A5%E5%86%86#%E5%A4%96%E5%BF%83%E3%81%AE%E4%BD%8D%E7%BD%AE) ）。
+である。ただし、 $A, B, C$ はそれぞれ $\angle A, \angle B, \angle C$ の位置ベクトルとする（c.f. [Wikipedia:「外接円：外心の位置」](https://ja.wikipedia.org/wiki/%E5%A4%96%E6%8E%A5%E5%86%86#%E5%A4%96%E5%BF%83%E3%81%AE%E4%BD%8D%E7%BD%AE) ）。
 
 
 外接円は `circumcircle_triangle` 関数で求める。  
