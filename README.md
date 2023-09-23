@@ -4,12 +4,13 @@ Collection of problems in computational geometry solved in C++
 Recommended utilities
 - [GeoGebra](https://www.geogebra.org/calculator): Online drawing tool.
 - [desmos: Geometry Tool](https://www.desmos.com/geometry): Online drawing tool.
-- [Herbie: The Browser UI](https://herbie.uwplse.org/doc/latest/using-web.html): Herbie detects inaccurate expressions and finds more accurate replacements.
 
 # [AtCoder](https://atcoder.jp/)
 
 # [Aizu Online Judge (AOJ)](https://onlinejudge.u-aizu.ac.jp/home)
-- [CGL-7_B: 内接円](doc/aoj/CGL_7_B.md)  
+- [CGL_7_C: 外接円](doc/aoj/CGL_7_C.md)  
+   三角形の外接円を求める。
+- [CGL_7_B: 内接円](doc/aoj/CGL_7_B.md)  
    三角形の内接円を求める。
 - [CGL_1_A: 射影](doc/aoj/CGL_1_A.md)  
    ユークリッド平面上の直線に対する点の射影を求める。
