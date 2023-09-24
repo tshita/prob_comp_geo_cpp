@@ -4,6 +4,7 @@ Collection of problems in computational geometry solved in C++
 Recommended utilities
 - [GeoGebra](https://www.geogebra.org/calculator): Online drawing tool.
 - [desmos: Geometry Tool](https://www.desmos.com/geometry): Online drawing tool.
+- [Herbie](https://herbie.uwplse.org/): Herbie detects inaccurate expressions and finds more accurate replacements.
 
 # [AtCoder](https://atcoder.jp/)
 
