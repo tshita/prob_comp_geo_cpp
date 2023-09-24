@@ -8,6 +8,8 @@ Recommended utilities
 # [AtCoder](https://atcoder.jp/)
 
 # [Aizu Online Judge (AOJ)](https://onlinejudge.u-aizu.ac.jp/home)
+- [CGL_7_I: ２つ円の共通部分の面積](doc/aoj/CGL_7_I.md)  
+   2 つの円の共通部分の面積を求める。
 - [CGL_7_C: 外接円](doc/aoj/CGL_7_C.md)  
    三角形の外接円を求める。
 - [CGL_7_B: 内接円](doc/aoj/CGL_7_B.md)  
