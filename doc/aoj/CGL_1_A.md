@@ -1,6 +1,6 @@
-[🏠 Home](../../README.md)
+[🏠 Home](../../README.md) | [🔗 AOJ CGL_1_A](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_A)
 
-# 射影（Projection）: [AOJ CGL_1_A](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_A)
+# 射影（Projection）
 ユークリッド平面上で 3 点 $p_0, p_1, p$ が与えられる。 $p_1$ と $p_2$ を通る直線に対する $p$ の射影を求めよ。
 
 # 解法
