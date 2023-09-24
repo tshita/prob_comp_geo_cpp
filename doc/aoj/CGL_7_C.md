@@ -1,6 +1,6 @@
-[🏠 Home](../../README.md)
+[🏠 Home](../../README.md) | [🔗 AOJ CGL_7_C](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/all/CGL_7_C)
 
-# 外接円（Circumscribed Circle of a Triangle）: [AOJ CGL_7_C](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/all/CGL_7_C)
+# 外接円（Circumscribed Circle of a Triangle）
 $\triangle A B C$ の外接円を求めよ。
 
 三角形の外接円（ *circumsircle* ）とは、三角形の各頂点を通る円のことである。外接円の中心を外心（ *circumcenter* ）、半径を外接半径（ *circumradius* ）と呼ぶ。
