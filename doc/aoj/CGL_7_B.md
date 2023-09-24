@@ -1,6 +1,6 @@
-[🏠 Home](../../README.md)
+[🏠 Home](../../README.md) | [🔗 AOJ CGL_7_B](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/all/CGL_7_B)
 
-# 内接円（Incircle of a Triangle）: [AOJ CGL_7_B](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/all/CGL_7_B)
+# 内接円（Incircle of a Triangle）
 $\triangle ABC$ の内接円を求めよ。
 
 三角形の内接円（ *incircle* ）とは、三角形の内部にあり三角形の 3 辺に接する円のことである。内接円の中心を内心（ *incenter* ）と呼ぶ。
