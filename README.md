@@ -9,15 +9,15 @@ Recommended utilities
 # [AtCoder](https://atcoder.jp/)
 
 # [Aizu Online Judge (AOJ)](https://onlinejudge.u-aizu.ac.jp/home)
-- [CGL_7_I: ２つ円の共通部分の面積](doc/aoj/CGL_7_I.md)  
+- [CGL_7_I: Area of Intersection between Two Circles](doc/aoj/CGL_7_I.md)  
    2 つの円の共通部分の面積を求める。
-- [CGL_7_C: 外接円](doc/aoj/CGL_7_C.md)  
+- [CGL_7_C: Circumscribed Circle of a Triangle](doc/aoj/CGL_7_C.md)  
    三角形の外接円を求める。
-- [CGL_7_B: 内接円](doc/aoj/CGL_7_B.md)  
+- [CGL_7_B: Incircle of a Triangle](doc/aoj/CGL_7_B.md)  
    三角形の内接円を求める。
-- [CGL_1_A: 射影](doc/aoj/CGL_1_A.md)  
+- [CGL_1_A: Projection](doc/aoj/CGL_1_A.md)  
    ユークリッド平面上の直線に対する点の射影を求める。
-- [CGL_1_C: 反時計回り](doc/aoj/CGL_1_C.md)  
+- [CGL_1_C: Counter-Clockwise](doc/aoj/CGL_1_C.md)  
    ユークリッド平面上の 3 点の向きを判定する計算幾何の基本的な道具。
 
 
