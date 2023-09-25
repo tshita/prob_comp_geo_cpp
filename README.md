@@ -9,6 +9,8 @@ Recommended utilities
 # [AtCoder](https://atcoder.jp/)
 
 # [Aizu Online Judge (AOJ)](https://onlinejudge.u-aizu.ac.jp/home)
+- [CGL_1_B: Reflection](doc/aoj/CGL_1_B.md)  
+   直線に対する点の反射を求める。
 - [CGL_7_I: Area of Intersection between Two Circles](doc/aoj/CGL_7_I.md)  
    2 つの円の共通部分の面積を求める。
 - [CGL_7_C: Circumscribed Circle of a Triangle](doc/aoj/CGL_7_C.md)  
