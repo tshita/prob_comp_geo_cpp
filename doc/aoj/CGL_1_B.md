@@ -1,12 +1,12 @@
 [🏠 Home](../../README.md)  |  [🔗 AOJ CGL_1_B](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/all/CGL_1_B)
 
-# 反射（Reflection）
+# 問題：反射（Reflection）
 直線 $l$ に対する点 $p$ の反射を求めよ。
 
 **反射（reflection）** とは、直線 $l$ を対称軸として点 $p$ と線対称の位置にある点のことである。
 
 # 解法
-$l$ に対する $p$ の射影を $x$ とする（c.f. [射影](./CGL_1_A.md)）。このとき、$l$ に対する $p$ の反射は $2 (x - p) + p = 2 x - p$ となる。
+$l$ に対する $p$ の射影を $x$ とする（c.f. [射影](./CGL_1_A.md)）。このとき、 $l$ に対する $p$ の反射は $2 (x - p) + p = 2 x - p$ となる。
 
 `reflection` 関数で求める。
 
