@@ -1,6 +1,6 @@
 [🏠 Home](../../README.md)  |  [🔗 Problem URL]()
 
-# <Problem Name>
+# 問題：<Problem Name>
 
 # 解法
 
