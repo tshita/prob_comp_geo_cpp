@@ -9,6 +9,8 @@ Recommended utilities
 # [AtCoder](https://atcoder.jp/)
 
 # [Aizu Online Judge (AOJ)](https://onlinejudge.u-aizu.ac.jp/home)
+- [CGL_2_A: Parallel / Orthogonal](doc/aoj/CGL_2_A.md)  
+   2 直線が垂直・平行・それ以外のどれかを判定せよ。
 - [CGL_1_B: Reflection](doc/aoj/CGL_1_B.md)  
    直線に対する点の反射を求める。
 - [CGL_7_I: Area of Intersection between Two Circles](doc/aoj/CGL_7_I.md)  
