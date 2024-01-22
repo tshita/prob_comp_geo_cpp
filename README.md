@@ -6,9 +6,17 @@ Recommended utilities
 - [desmos: Geometry Tool](https://www.desmos.com/geometry): Online drawing tool.
 - [Herbie](https://herbie.uwplse.org/): Herbie detects inaccurate expressions and finds more accurate replacements.
 
+
+# Memo
+- [Floating-point number](doc/memo/floating_point_number.md)  
+   浮動小数点数型に関するメモ
+
+
 # [AtCoder](https://atcoder.jp/)
 
 # [Aizu Online Judge (AOJ)](https://onlinejudge.u-aizu.ac.jp/home)
+- [AOJ 1422: Loop of Chocolate](doc/aoj/1422.md)  
+   球の体積と球同士の共通部分の体積を求めよ。
 - [CGL_2_A: Parallel / Orthogonal](doc/aoj/CGL_2_A.md)  
    2 直線が垂直・平行・それ以外のどれかを判定せよ。
 - [CGL_1_B: Reflection](doc/aoj/CGL_1_B.md)  
