@@ -15,6 +15,8 @@ Recommended utilities
 # [AtCoder](https://atcoder.jp/)
 
 # [Aizu Online Judge (AOJ)](https://onlinejudge.u-aizu.ac.jp/home)
+- [AOJ 2706: 幾何問題を解こう](doc/aoj/2706.md)  
+   10 進有理数を $b$ 進有限小数として表せれる最小の $b$ を求めよ。
 - [AOJ 1422: Loop of Chocolate](doc/aoj/1422.md)  
    球の体積と球同士の共通部分の体積を求めよ。
 - [CGL_2_A: Parallel / Orthogonal](doc/aoj/CGL_2_A.md)  
