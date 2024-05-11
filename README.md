@@ -15,6 +15,8 @@ Recommended utilities
 # [AtCoder](https://atcoder.jp/)
 
 # [Aizu Online Judge (AOJ)](https://onlinejudge.u-aizu.ac.jp/home)
+- [AOJ 1136: Polygonal Line Search](doc/aoj/1136.md)  
+   2 つの軸平行な単純折れ線が回転と平行移動に関して等しいかどうかを判定せよ。
 - [AOJ 2706: 幾何問題を解こう](doc/aoj/2706.md)  
    10 進有理数を $b$ 進有限小数として表せれる最小の $b$ を求めよ。
 - [AOJ 1422: Loop of Chocolate](doc/aoj/1422.md)  
