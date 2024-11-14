@@ -1,22 +1,22 @@
 [🏠 Home](../../README.md)  |  [🔗 AOJ CGL_4_A](https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=CGL_4_A&lang=en)  
 
 # 問題：Convex hull for a finite set of points in the Euclidean plane
-ユークリッド平面上の $n$ 個の点集合 $P$ が与えられる。$P$ の凸包 (convex hull)を求めよ。
+ユークリッド平面上の $n$ 個の点集合 $P$ が与えられる。 $P$ の凸包 (convex hull)を求めよ。
 
 **Def. 凸包 (convex hull)**  
-    点集合 $P$ の凸包とは、$P$ を含む最小の凸集合である。  
+    点集合 $P$ の凸包とは、 $P$ を含む最小の凸集合である。  
     【注】 $P$ が点集合の場合は $P$ の凸包は多角形となり、多角形の頂点はすべて $P$ に含まれる。
 
 # 解法: Jarvis's March（Jarvis の行進法）
-初めに、$P$ の中で $y$ 座標が一番小さい点を選びそれを $p_1$ とする。$p_1$ は凸包の頂点である。  
+初めに、 $P$ の中で $y$ 座標が一番小さい点を選びそれを $p_1$ とする。 $p_1$ は凸包の頂点である。  
 $p_1$ を起点に反時計回りに凸包の頂点を順番に求めていく。次の凸包の頂点は $p_1$ を中心に $x$ 軸の正の方向とのなす角が反時計回りに一番小さい点でそれを $p_2$ とする。  
-今、凸包上の頂点が $k$ 個見つかったとする。$k + 1$ 番目の凸包の頂点 $p \setminus \{p_{k - 1}, p_k\}$ はベクトル $\overrightarrow{p_{k - 1} p_{k}}$ と $\overrightarrow{p_{k} p}$ のなす角が反時計回りに一番小さい点である。ただし、アルゴリズムの実装ではなす角を求める必要はなく [counter-clockwise](../aoj/CGL_1_C.md) を用いて 3 点の位置関係に着目して点を追加していけばよい。
+今、凸包上の頂点が $k$ 個見つかったとする。 $k + 1$ 番目の凸包の頂点 $p \setminus \{p_{k - 1}, p_k\}$ はベクトル $\overrightarrow{p_{k - 1} p_{k}}$ と $\overrightarrow{p_{k} p}$ のなす角が反時計回りに一番小さい点である。ただし、アルゴリズムの実装ではなす角を求める必要はなく [counter-clockwise](../aoj/CGL_1_C.md) を用いて 3 点の位置関係に着目して点を追加していけばよい。
 
 このアルゴリズムは一般に *ギフト包装法（Gift wrapping algorithm）* と呼ばれているが、特に 2 次元の場合は開発者の R.A.Jarvis から *Jarvis's march* と呼ばれている。
 
 ## 計算時間
-計算時間は $O(h n)$ である。ただし、$n$ は $P$ のサイズを、$h$ は $P$ の凸包の頂点数とする。  
-計算時間が出力するサイズに依存するアルゴリズムを一般に *output sensitive* と言い、Jarvis's march は $h$ に依存するので $output sensitive$ なアルゴリズムである。
+計算時間は $O(h n)$ である。ただし、 $n$ は $P$ のサイズを、 $h$ は $P$ の凸包の頂点数とする。  
+計算時間が出力するサイズに依存するアルゴリズムを一般に *output sensitive* と言い、Jarvis's march は $P$ の凸包の頂点数 $h$ に依存するので $output sensitive$ なアルゴリズムである。
 
 ## 参考文献
 - [Gift wrapping algorithm @Wikipedia](https://en.wikipedia.org/wiki/Gift_wrapping_algorithm) 

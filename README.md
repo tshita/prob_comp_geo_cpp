@@ -13,7 +13,7 @@ Recommended utilities
 
 # Algorithms
 - [Jarvis's march](doc/algorithms/jarvis_march_convex_hull.md)  
-   ユークリッド平面上の点集合 $P$ の凸包を $O(h n)$ 時間で求めよ。ただし、$n = |P|$, $h$ は $P$ の凸包の頂点数とする。
+   ユークリッド平面上の点集合 $P$ の凸包を $O(h n)$ 時間で求めよ。ただし、$n = |P|$ , $h$ は $P$ の凸包の頂点数とする。
 
 # Problems
 ## [AtCoder](https://atcoder.jp/)
