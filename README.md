@@ -1,19 +1,21 @@
-Collection of problems in computational geometry solved in C++
-----------------------------------------------------------------------
+# A Collection of Computational Geometry Problems
 
-Recommended utilities
-- [GeoGebra](https://www.geogebra.org/calculator): Online drawing tool.
-- [desmos: Geometry Tool](https://www.desmos.com/geometry): Online drawing tool.
-- [Herbie](https://herbie.uwplse.org/): Herbie detects inaccurate expressions and finds more accurate replacements.
+## Recommended Tools
+- [GeoGebra](https://www.geogebra.org/calculator): An online tool for creating geometric diagrams.
+- [desmos: Geometry Tool](https://www.desmos.com/geometry): An interactive online geometry drawing tool.
+- [Herbie](https://herbie.uwplse.org/): A tool that detects inaccurate mathematical expressions and suggests more accurate alternatives.
 
-
-# Memo
+<!-- 
+## Memo
 - [Floating-point number](doc/memo/floating_point_number.md)  
-   浮動小数点数型に関するメモ
+   浮動小数点数型に関するメモ 
+-->
+
 
 # Algorithms
 - [Jarvis's march](doc/algorithms/jarvis_march_convex_hull.md)  
    ユークリッド平面上の点集合 $P$ の凸包を $O(h n)$ 時間で求めよ。ただし、 $n = |P|$ , $h$ は $P$ の凸包の頂点数とする。
+
 
 # Problems
 ## [AtCoder](https://atcoder.jp/)
@@ -42,6 +44,6 @@ Recommended utilities
 
 
 # License
-These codes are licensed under CC0.
+All source code in this repository is released under the CC0 1.0 Universal (Public Domain Dedication).
 
-[![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png "CC0")](http://creativecommons.org/publicdomain/zero/1.0/deed.ja)
+[![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png "CC0")](https://creativecommons.org/publicdomain/zero/1.0/deed.ja)
