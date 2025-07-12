@@ -42,6 +42,10 @@
 - [CGL_1_C: Counter-Clockwise](doc/aoj/CGL_1_C.md)  
    ユークリッド平面上の 3 点の向きを判定する計算幾何の基本的な道具。
 
+## ICPC
+- [ICPC国内予選2025 G問題：面の数](doc/icpc/icpc_japan_domestic_2025_g.md)  
+   3次元ユークリッド空間に平行な2つの面 $H_1, H_2$ と実数列 $d_1, d_2$ が与えられたとき次を求めよ。ただし、関数 $f(P)$ は凸多面体 $P$ の面の数。  
+   $\{f(\rm{conv}(P_1 \cup P_2)) \mid P_1, P_2 \text{はそれぞれ} H_1, H_2 \text{上にあり、内角の和が} d_1, d_2 \text{を満たす凸多角形} \}$
 
 # License
 All source code in this repository is released under the CC0 1.0 Universal (Public Domain Dedication).
