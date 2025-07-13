@@ -1,41 +1,39 @@
-[🏠 Home](../../README.md) | [🔗 AOJ CGL_7_B](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/all/CGL_7_B)
+[🏠 Home](../index.md) | [🔗 AOJ CGL_7_C](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/all/CGL_7_C)
 
-# 内接円（Incircle of a Triangle）
-$\triangle ABC$ の内接円を求めよ。
+# 外接円（Circumscribed Circle of a Triangle）
+$\triangle A B C$ の外接円を求めよ。
 
-三角形の内接円（ *incircle* ）とは、三角形の内部にあり三角形の 3 辺に接する円のことである。内接円の中心を内心（ *incenter* ）と呼ぶ。
+三角形の外接円（ *circumsircle* ）とは、三角形の各頂点を通る円のことである。外接円の中心を外心（ *circumcenter* ）、半径を外接半径（ *circumradius* ）と呼ぶ。
 
 # 解法
-三角形の内接円は存在して、その半径 $r$ はヘロンの公式から導出され、
+三角形の外接円は存在して、外接半径 $R$ は、
 
 ```math
-r = \frac{2S}{a + b + c}
+R = \frac{a b c}{4 S}
 ```
 
-である。ただし、 $S$ は $\triangle ABC$ の面積で、 $a, b, c$ はそれぞれ $\angle A, \angle B, \angle C$ の対辺の長さとする。すなわち、 $a + b + c$ は $\triangle ABC$ の周長に等しい。
+である（c.f. [Wikipedia: Circumcircle. Other properties](https://en.wikipedia.org/wiki/Circumcircle#Other_properties) ）。  
+ただし、 $a, b, c$ はそれぞれ $\angle A, \angle B, \angle C$ の対辺の長さ、 $S$ は $\triangle A B C$ の面積とする。
 
-内心は 3 頂点の重み付き平均
+また外心は、
 
 ```math
-\frac{a}{a + b + c} (x_a, y_a) + \frac{b}{a + b + c} (x_b, y_b) + \frac{c}{a + b + c} (x_c, y_c)
+\frac{a^2 (b^2 + c^2 - a^2) A + b^2 (c^2 + a^2 - b^2) B + c^2 (a^2 + b^2 - c^2) C}{16 S^2}
 ```
 
-に等しい。ここで、 $(x_a, y_a), (x_b, y_b), (x_c, y_c)$ はそれぞれ $\angle A, \angle B, \angle C$ の座標とする。
-
-内接円は `incircle_triangle` 関数で求める。  
-第二引数の `bool strict_definition` は十分条件をチェックしている。すなわち、上の式で求めた円が三角形の 3 辺に接するのかを確かめている。
-実験的に十分条件を満たさないインスタンスが存在するかは確認できていないが、数値誤差の影響を受けずに正しい内接円を返すかは確信できなかったので追加した。
+である。ただし、 $A, B, C$ はそれぞれ $\angle A, \angle B, \angle C$ の位置ベクトルとする（c.f. [Wikipedia:「外接円：外心の位置」](https://ja.wikipedia.org/wiki/%E5%A4%96%E6%8E%A5%E5%86%86#%E5%A4%96%E5%BF%83%E3%81%AE%E4%BD%8D%E7%BD%AE) ）。
 
 
-## 参考文献
-- [Wikipedia: 三角形の内接円と傍接円](https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E5%BD%A2%E3%81%AE%E5%86%85%E6%8E%A5%E5%86%86%E3%81%A8%E5%82%8D%E6%8E%A5%E5%86%86)
-
+外接円は `circumcircle_triangle` 関数で求める。  
+第二引数の `bool strict_definition` は十分条件をチェックしている。すなわち、上の式で求めた円が三角形の全ての頂点を通るかを確かめている。
+実験的に十分条件を満たさないインスタンスが存在するかは確認できていないが、数値誤差の影響を受けずに正しい外接円を返すかは確信できなかったので追加した。  
+また、 `Real` 型を `long double` 型にすると AC だが `double` 型にすると WA となる。
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 <details>
-<summary>src/CGL_7_B.cc を表示</summary>
+<summary>src/CGL_7_C.cc を表示</summary>
 
 ```cpp
 #include <iostream>
@@ -46,7 +44,7 @@ r = \frac{2S}{a + b + c}
 #include <vector>
 #include <optional>
 
-using Real = double;
+using Real = long double;
 
 constexpr Real EPS = 1e-10;
 const Real PI = acos(static_cast<Real>(-1.0)); // GCC 4.6.1 以上で acos() は constexpr の場合がある
@@ -311,34 +309,32 @@ Real Polygon::area() const {
 
 // --------------------8<------- start of main part of library -------8<--------------------
 
-// Get incircle of a triangle
-std::optional<Circle> incircle_triangle(const Polygon &triangle, const bool strict_definition = false) {
+// Get circumcircle of a triangle
+std::optional<Circle> circumcircle_triangle(const Polygon &triangle, const bool strict_definition = false) {
     if (triangle.points.size() != 3) return std::nullopt;
 
     const Real area = std::abs(triangle.area());
-    const Real len_01 = distance(triangle.points[0], triangle.points[1]);
-    const Real len_02 = distance(triangle.points[0], triangle.points[2]);
-    const Real len_12 = distance(triangle.points[1], triangle.points[2]);
+    const Real a = distance(triangle.points[1], triangle.points[2]);
+    const Real b = distance(triangle.points[0], triangle.points[2]);
+    const Real c = distance(triangle.points[0], triangle.points[1]);
 
-    Circle incircle;
-    const Real perimeter = len_01 + len_02 + len_12; // perimeter of the triangle
-    incircle.r = 2.0 * area / perimeter;
-    incircle = (len_12 * triangle.points[0] + len_02 * triangle.points[1] + len_01 * triangle.points[2]) / perimeter;
+    Circle circumcircle;
+    circumcircle.r = a * b * c / (4.0 * area);
 
-    // Check that the incircle must touch the three sides of the triangle
+    const Real a2 = a * a, b2 = b * b, c2 = c * c;
+    Point2 tmp = a2 * (b2 + c2 - a2) * triangle.points[0];
+    tmp += b2 * (c2 + a2 - b2) * triangle.points[1];
+    tmp += c2 * (a2 + b2 - c2) * triangle.points[2];
+    circumcircle = tmp / (16.0 * area * area);
+
+    // Check that the circumcircle passes through all three vertices of the triangle.
     if (strict_definition) {
-        auto p01 = cross_point(incircle, Segment(triangle.points[0], triangle.points[1]));
-        auto p02 = cross_point(incircle, Segment(triangle.points[0], triangle.points[2]));
-        auto p12 = cross_point(incircle, Segment(triangle.points[1], triangle.points[2]));
-
-        if (p01.size() != 1 || p02.size() != 1 || p12.size() != 1) return std::nullopt;
-
-        if (neq(incircle.r, (p01.front() - incircle).abs())) return std::nullopt;
-        if (neq(incircle.r, (p02.front() - incircle).abs())) return std::nullopt;
-        if (neq(incircle.r, (p12.front() - incircle).abs())) return std::nullopt;
+        for (const auto &p: triangle.points) {
+            if (neq(circumcircle.r, (circumcircle - p).abs())) return std::nullopt;
+        }
     }
 
-    return incircle;
+    return circumcircle;
 }
 // ---------------------8<------- end of main parto of library -------8<---------------------
 
@@ -351,7 +347,7 @@ int main() {
         std::cin >> p;
     }
 
-    auto incircle = incircle_triangle(triangle);
+    auto incircle = circumcircle_triangle(triangle);
     if (incircle) {
         std::cout << incircle.value() << std::endl;
     }

@@ -1,4 +1,4 @@
-[🏠 Home](../../README.md)  |  [🔗 AOJ CGL_4_A](https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=CGL_4_A&lang=en)  
+[🏠 Home](../index.md)  |  [🔗 AOJ CGL_4_A](https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=CGL_4_A&lang=en)  
 
 # 問題：Convex hull for a finite set of points in the Euclidean plane
 ユークリッド平面上の $n$ 個の点集合 $P$ が与えられる。 $P$ の凸包 (convex hull)を求めよ。

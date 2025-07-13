@@ -1,4 +1,4 @@
-[🏠 Home](../../README.md)  |  [🔗 AOJ CGL_1_B](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/all/CGL_1_B)
+[🏠 Home](../index.md)  |  [🔗 AOJ CGL_1_B](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/all/CGL_1_B)
 
 # 問題：反射（Reflection）
 直線 $l$ に対する点 $p$ の反射を求めよ。

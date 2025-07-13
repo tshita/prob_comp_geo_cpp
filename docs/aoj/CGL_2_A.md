@@ -1,4 +1,4 @@
-[🏠 Home](../../README.md)  |  [🔗 AOJ CGL_2_A](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/all/CGL_2_A)
+[🏠 Home](../index.md)  |  [🔗 AOJ CGL_2_A](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/all/CGL_2_A)
 
 # 問題：平行・垂直（Parallel / Orthogonal）
 2 直線 $l_1, l_2$ が与えられる。 $l_1$ と $l_2$ が平行、直交、またはそれ以外かを判定せよ。

@@ -1,4 +1,4 @@
-[🏠 Home](../../README.md)  |  [🔗 AOJ CGL_7_I](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/all/CGL_7_I)
+[🏠 Home](../index.md)  |  [🔗 AOJ CGL_7_I](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/all/CGL_7_I)
 
 # ２つ円の共通部分の面積（Area of Intersection between Two Circles）
 2 つの円 $c_1, c_2$ の共通部分の面積を求めよ。

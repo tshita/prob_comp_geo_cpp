@@ -1,4 +1,4 @@
-[🏠 Home](../../README.md) | [🔗 AOJ CGL_1_C](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_C)
+[🏠 Home](../index.md) | [🔗 AOJ CGL_1_C](https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_C)
 
 # 反時計回り（Counter-Clockwise）
 ユークリッド平面上に 3 点 $p_0, p_1, p_2$ が与えられる。 $p_0, p_1, p_2$ をこの順に訪れるとき $p_1$ でどの方向に折れるのかを判定せよ。
