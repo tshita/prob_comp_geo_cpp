@@ -3,8 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <title>{{ page.title }}</title>
-  <!-- MathJax 読み込み -->
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+  <!-- minimaのCSS読み込み -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/minima@2.5.1/css/minima.min.css" />
+
+  <!-- MathJaxの設定と読み込み -->
+  <script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+
 </head>
 <body>
   {{ content }}
