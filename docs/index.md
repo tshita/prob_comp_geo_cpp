@@ -1,11 +1,9 @@
----
-title: A Collection of Computational Geometry Problems  
-layout: default
----
+# A Collection of Computational Geometry Problems  
 
 ## Recommended Tools
+- [My Library](https://github.com/tshita/algorithm): A personal collection of algorithms.
 - [GeoGebra](https://www.geogebra.org/calculator): An online tool for creating geometric diagrams.
-- [desmos: Geometry Tool](https://www.desmos.com/geometry): An interactive online geometry drawing tool.
+- [Desmos: Geometry Tool](https://www.desmos.com/geometry): An interactive online geometry drawing tool.
 - [Herbie](https://herbie.uwplse.org/): A tool that detects inaccurate mathematical expressions and suggests more accurate alternatives.
 
 <!-- 
@@ -47,10 +45,4 @@ layout: default
 
 ## ICPC
 - [ICPC国内予選2025 G問題：面の数](./icpc/icpc_japan_domestic_2025_g.md)  
-   3次元ユークリッド空間に平行な2つの面 $H_1, H_2$ と実数列 $d_1, d_2$ が与えられたとき次を求めよ。ただし、関数 $f(P)$ は凸多面体 $P$ の面の数。  
-   $\{ f(\rm{conv}(P_1 \cup P_2)) \mid P_1, P_2 \text{はそれぞれ} H_1, H_2 \text{上にあり、内角の和が} d_1, d_2 \text{を満たす凸多角形} \}$
-
-# License
-All source code in this repository is released under the CC0 1.0 Universal (Public Domain Dedication).
-
-[![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png "CC0")](https://creativecommons.org/publicdomain/zero/1.0/deed.ja)
+   3次元ユークリッド空間に平行な2つの面 $H_1, H_2$ と実数列 $d_1, d_2$ が与えられたときに、凸多面体 $P_1, P_2$ がそれぞれ $H_1, H_2$ 上にあり、内角の和が $d_1, d_2$ となるもので $\rm{conv}(P_1 \cup P_2)$ の面の数としてありうるものをすべて列挙せよ。
