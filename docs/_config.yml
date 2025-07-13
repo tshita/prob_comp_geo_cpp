@@ -1,2 +1,4 @@
 theme: minima
-title: Computational Geometry Problems
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
