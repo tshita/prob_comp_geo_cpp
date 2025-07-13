@@ -1,4 +1,7 @@
-# A Collection of Computational Geometry Problems
+---
+title: A Collection of Computational Geometry Problems  
+layout: default
+---
 
 ## Recommended Tools
 - [GeoGebra](https://www.geogebra.org/calculator): An online tool for creating geometric diagrams.
@@ -13,7 +16,7 @@
 
 
 # Algorithms
-- [Jarvis's march](docs/algorithms/jarvis_march_convex_hull.md)  
+- [Jarvis's march](./algorithms/jarvis_march_convex_hull.md)  
    ユークリッド平面上の点集合 $P$ の凸包を $O(h n)$ 時間で求めよ。ただし、 $n = |P|$ , $h$ は $P$ の凸包の頂点数とする。
 
 
@@ -21,31 +24,31 @@
 ## [AtCoder](https://atcoder.jp/)
 
 ## [Aizu Online Judge (AOJ)](https://onlinejudge.u-aizu.ac.jp/home)
-- [AOJ 1136: Polygonal Line Search](docs/aoj/1136.md)  
+- [AOJ 1136: Polygonal Line Search](./aoj/1136.md)  
    2 つの軸平行な単純折れ線が回転と平行移動に関して等しいかどうかを判定せよ。
-- [AOJ 2706: 幾何問題を解こう](docs/aoj/2706.md)  
+- [AOJ 2706: 幾何問題を解こう](./aoj/2706.md)  
    10 進有理数を $b$ 進有限小数として表せれる最小の $b$ を求めよ。
-- [AOJ 1422: Loop of Chocolate](docs/aoj/1422.md)  
+- [AOJ 1422: Loop of Chocolate](./aoj/1422.md)  
    球の体積と球同士の共通部分の体積を求めよ。
-- [CGL_2_A: Parallel / Orthogonal](docs/aoj/CGL_2_A.md)  
+- [CGL_2_A: Parallel / Orthogonal](./aoj/CGL_2_A.md)  
    2 直線が垂直・平行・それ以外のどれかを判定せよ。
-- [CGL_1_B: Reflection](docs/aoj/CGL_1_B.md)  
+- [CGL_1_B: Reflection](./aoj/CGL_1_B.md)  
    直線に対する点の反射を求める。
-- [CGL_7_I: Area of Intersection between Two Circles](docs/aoj/CGL_7_I.md)  
+- [CGL_7_I: Area of Intersection between Two Circles](./aoj/CGL_7_I.md)  
    2 つの円の共通部分の面積を求める。
-- [CGL_7_C: Circumscribed Circle of a Triangle](docs/aoj/CGL_7_C.md)  
+- [CGL_7_C: Circumscribed Circle of a Triangle](./aoj/CGL_7_C.md)  
    三角形の外接円を求める。
-- [CGL_7_B: Incircle of a Triangle](docs/aoj/CGL_7_B.md)  
+- [CGL_7_B: Incircle of a Triangle](./aoj/CGL_7_B.md)  
    三角形の内接円を求める。
-- [CGL_1_A: Projection](docs/aoj/CGL_1_A.md)  
+- [CGL_1_A: Projection](./aoj/CGL_1_A.md)  
    ユークリッド平面上の直線に対する点の射影を求める。
-- [CGL_1_C: Counter-Clockwise](docs/aoj/CGL_1_C.md)  
+- [CGL_1_C: Counter-Clockwise](./aoj/CGL_1_C.md)  
    ユークリッド平面上の 3 点の向きを判定する計算幾何の基本的な道具。
 
 ## ICPC
-- [ICPC国内予選2025 G問題：面の数](docs/icpc/icpc_japan_domestic_2025_g.md)  
+- [ICPC国内予選2025 G問題：面の数](./icpc/icpc_japan_domestic_2025_g.md)  
    3次元ユークリッド空間に平行な2つの面 $H_1, H_2$ と実数列 $d_1, d_2$ が与えられたとき次を求めよ。ただし、関数 $f(P)$ は凸多面体 $P$ の面の数。  
-   $\{f(\rm{conv}(P_1 \cup P_2)) \mid P_1, P_2 \text{はそれぞれ} H_1, H_2 \text{上にあり、内角の和が} d_1, d_2 \text{を満たす凸多角形} \}$
+   $\{ f(\rm{conv}(P_1 \cup P_2)) \mid P_1, P_2 \text{はそれぞれ} H_1, H_2 \text{上にあり、内角の和が} d_1, d_2 \text{を満たす凸多角形} \}$
 
 # License
 All source code in this repository is released under the CC0 1.0 Universal (Public Domain Dedication).
