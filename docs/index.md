@@ -46,3 +46,6 @@
 ## ICPC
 - [ICPC国内予選2025 G問題：面の数](./icpc/icpc_japan_domestic_2025_g.md)  
    3次元ユークリッド空間に平行な2つの面 $H_1, H_2$ と実数列 $d_1, d_2$ が与えられたときに、凸多面体 $P_1, P_2$ がそれぞれ $H_1, H_2$ 上にあり、内角の和が $d_1, d_2$ となるもので $\rm{conv}(P_1 \cup P_2)$ の面の数としてありうるものをすべて列挙せよ。
+
+-----------------
+> For a casual list of notes, as well as problems and algorithms I'm interested in implementing someday, see [this list](./memo/memo_index.md).
